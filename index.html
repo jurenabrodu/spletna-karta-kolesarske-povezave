@@ -30,17 +30,17 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="data/kolesarskapotkranjljubljana_1.js"></script>
-        <script src="data/navezavakranjanakolpotargonavti1_2.js"></script>
-        <script src="data/navezavakranjanakolpotargonavti2_3.js"></script>
-        <script src="data/kolesarskapotargonavtiljvrhnikalj_4.js"></script>
-        <script src="data/turistinoinformacijskicentri_5.js"></script>
-        <script src="data/prostorzapoitek_6.js"></script>
-        <script src="data/portniparki_7.js"></script>
+        <script src="data/portniparki_1.js"></script>
+        <script src="data/prostorzapoitek_2.js"></script>
+        <script src="data/turistinoinformacijskicentri_3.js"></script>
+        <script src="data/navezavakranjanakolpotargonavti1_4.js"></script>
+        <script src="data/navezavakranjanakolpotargonavti2_5.js"></script>
+        <script src="data/kolesarskapotargonavti_6.js"></script>
+        <script src="data/kolesarskapotkranjljubljana_7.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:10
-        }).fitBounds([[46.09871244579945,14.200092079247828],[46.33696066401417,14.63529766330037]]);
+        }).fitBounds([[45.8665223698319,14.207847017459862],[46.10477058804662,14.643052601512405]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -61,76 +61,7 @@
         });
         layer_OpenStreetMap_0;
         map.addLayer(layer_OpenStreetMap_0);
-        function pop_kolesarskapotkranjljubljana_1(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['name'] !== null ? autolinker.link(feature.properties['name'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['cmt'] !== null ? autolinker.link(feature.properties['cmt'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['desc'] !== null ? autolinker.link(feature.properties['desc'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['src'] !== null ? autolinker.link(feature.properties['src'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link1_href'] !== null ? autolinker.link(feature.properties['link1_href'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link1_text'] !== null ? autolinker.link(feature.properties['link1_text'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link1_type'] !== null ? autolinker.link(feature.properties['link1_type'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link2_href'] !== null ? autolinker.link(feature.properties['link2_href'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link2_text'] !== null ? autolinker.link(feature.properties['link2_text'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link2_type'] !== null ? autolinker.link(feature.properties['link2_type'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['number'] !== null ? autolinker.link(feature.properties['number'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['type'] !== null ? autolinker.link(feature.properties['type'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_kolesarskapotkranjljubljana_1_0() {
-            return {
-                pane: 'pane_kolesarskapotkranjljubljana_1',
-                opacity: 1,
-                color: 'rgba(251,32,21,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 4.0,
-                fillOpacity: 0,
-                interactive: false,
-            }
-        }
-        map.createPane('pane_kolesarskapotkranjljubljana_1');
-        map.getPane('pane_kolesarskapotkranjljubljana_1').style.zIndex = 401;
-        map.getPane('pane_kolesarskapotkranjljubljana_1').style['mix-blend-mode'] = 'normal';
-        var layer_kolesarskapotkranjljubljana_1 = new L.geoJson(json_kolesarskapotkranjljubljana_1, {
-            attribution: '',
-            interactive: false,
-            dataVar: 'json_kolesarskapotkranjljubljana_1',
-            layerName: 'layer_kolesarskapotkranjljubljana_1',
-            pane: 'pane_kolesarskapotkranjljubljana_1',
-            onEachFeature: pop_kolesarskapotkranjljubljana_1,
-            style: style_kolesarskapotkranjljubljana_1_0,
-        });
-        bounds_group.addLayer(layer_kolesarskapotkranjljubljana_1);
-        map.addLayer(layer_kolesarskapotkranjljubljana_1);
-        function pop_navezavakranjanakolpotargonavti1_2(feature, layer) {
+        function pop_portniparki_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
@@ -139,240 +70,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_navezavakranjanakolpotargonavti1_2_0() {
+        function style_portniparki_1_0() {
             return {
-                pane: 'pane_navezavakranjanakolpotargonavti1_2',
-                opacity: 1,
-                color: 'rgba(15,157,105,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 3.0,
-                fillOpacity: 0,
-                interactive: false,
-            }
-        }
-        map.createPane('pane_navezavakranjanakolpotargonavti1_2');
-        map.getPane('pane_navezavakranjanakolpotargonavti1_2').style.zIndex = 402;
-        map.getPane('pane_navezavakranjanakolpotargonavti1_2').style['mix-blend-mode'] = 'normal';
-        var layer_navezavakranjanakolpotargonavti1_2 = new L.geoJson(json_navezavakranjanakolpotargonavti1_2, {
-            attribution: '',
-            interactive: false,
-            dataVar: 'json_navezavakranjanakolpotargonavti1_2',
-            layerName: 'layer_navezavakranjanakolpotargonavti1_2',
-            pane: 'pane_navezavakranjanakolpotargonavti1_2',
-            onEachFeature: pop_navezavakranjanakolpotargonavti1_2,
-            style: style_navezavakranjanakolpotargonavti1_2_0,
-        });
-        bounds_group.addLayer(layer_navezavakranjanakolpotargonavti1_2);
-        map.addLayer(layer_navezavakranjanakolpotargonavti1_2);
-        function pop_navezavakranjanakolpotargonavti2_3(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_navezavakranjanakolpotargonavti2_3_0() {
-            return {
-                pane: 'pane_navezavakranjanakolpotargonavti2_3',
-                opacity: 1,
-                color: 'rgba(31,120,180,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 4.0,
-                fillOpacity: 0,
-                interactive: false,
-            }
-        }
-        map.createPane('pane_navezavakranjanakolpotargonavti2_3');
-        map.getPane('pane_navezavakranjanakolpotargonavti2_3').style.zIndex = 403;
-        map.getPane('pane_navezavakranjanakolpotargonavti2_3').style['mix-blend-mode'] = 'normal';
-        var layer_navezavakranjanakolpotargonavti2_3 = new L.geoJson(json_navezavakranjanakolpotargonavti2_3, {
-            attribution: '',
-            interactive: false,
-            dataVar: 'json_navezavakranjanakolpotargonavti2_3',
-            layerName: 'layer_navezavakranjanakolpotargonavti2_3',
-            pane: 'pane_navezavakranjanakolpotargonavti2_3',
-            onEachFeature: pop_navezavakranjanakolpotargonavti2_3,
-            style: style_navezavakranjanakolpotargonavti2_3_0,
-        });
-        bounds_group.addLayer(layer_navezavakranjanakolpotargonavti2_3);
-        map.addLayer(layer_navezavakranjanakolpotargonavti2_3);
-        function pop_kolesarskapotargonavtiljvrhnikalj_4(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['name'] !== null ? autolinker.link(feature.properties['name'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['cmt'] !== null ? autolinker.link(feature.properties['cmt'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['desc'] !== null ? autolinker.link(feature.properties['desc'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['src'] !== null ? autolinker.link(feature.properties['src'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link1_href'] !== null ? autolinker.link(feature.properties['link1_href'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link1_text'] !== null ? autolinker.link(feature.properties['link1_text'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link1_type'] !== null ? autolinker.link(feature.properties['link1_type'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link2_href'] !== null ? autolinker.link(feature.properties['link2_href'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link2_text'] !== null ? autolinker.link(feature.properties['link2_text'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['link2_type'] !== null ? autolinker.link(feature.properties['link2_type'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['number'] !== null ? autolinker.link(feature.properties['number'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['type'] !== null ? autolinker.link(feature.properties['type'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_kolesarskapotargonavtiljvrhnikalj_4_0() {
-            return {
-                pane: 'pane_kolesarskapotargonavtiljvrhnikalj_4',
-                opacity: 1,
-                color: 'rgba(18,240,25,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 4.0,
-                fillOpacity: 0,
-                interactive: false,
-            }
-        }
-        map.createPane('pane_kolesarskapotargonavtiljvrhnikalj_4');
-        map.getPane('pane_kolesarskapotargonavtiljvrhnikalj_4').style.zIndex = 404;
-        map.getPane('pane_kolesarskapotargonavtiljvrhnikalj_4').style['mix-blend-mode'] = 'normal';
-        var layer_kolesarskapotargonavtiljvrhnikalj_4 = new L.geoJson(json_kolesarskapotargonavtiljvrhnikalj_4, {
-            attribution: '',
-            interactive: false,
-            dataVar: 'json_kolesarskapotargonavtiljvrhnikalj_4',
-            layerName: 'layer_kolesarskapotargonavtiljvrhnikalj_4',
-            pane: 'pane_kolesarskapotargonavtiljvrhnikalj_4',
-            onEachFeature: pop_kolesarskapotargonavtiljvrhnikalj_4,
-            style: style_kolesarskapotargonavtiljvrhnikalj_4_0,
-        });
-        bounds_group.addLayer(layer_kolesarskapotargonavtiljvrhnikalj_4);
-        map.addLayer(layer_kolesarskapotargonavtiljvrhnikalj_4);
-        function pop_turistinoinformacijskicentri_5(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_turistinoinformacijskicentri_5_0() {
-            return {
-                pane: 'pane_turistinoinformacijskicentri_5',
-                radius: 6.0,
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(183,72,75,1.0)',
-                interactive: false,
-            }
-        }
-        map.createPane('pane_turistinoinformacijskicentri_5');
-        map.getPane('pane_turistinoinformacijskicentri_5').style.zIndex = 405;
-        map.getPane('pane_turistinoinformacijskicentri_5').style['mix-blend-mode'] = 'normal';
-        var layer_turistinoinformacijskicentri_5 = new L.geoJson(json_turistinoinformacijskicentri_5, {
-            attribution: '',
-            interactive: false,
-            dataVar: 'json_turistinoinformacijskicentri_5',
-            layerName: 'layer_turistinoinformacijskicentri_5',
-            pane: 'pane_turistinoinformacijskicentri_5',
-            onEachFeature: pop_turistinoinformacijskicentri_5,
-            pointToLayer: function (feature, latlng) {
-                var context = {
-                    feature: feature,
-                    variables: {}
-                };
-                return L.circleMarker(latlng, style_turistinoinformacijskicentri_5_0(feature));
-            },
-        });
-        bounds_group.addLayer(layer_turistinoinformacijskicentri_5);
-        map.addLayer(layer_turistinoinformacijskicentri_5);
-        function pop_prostorzapoitek_6(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_prostorzapoitek_6_0() {
-            return {
-                pane: 'pane_prostorzapoitek_6',
-                radius: 6.0,
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(255,158,23,1.0)',
-                interactive: false,
-            }
-        }
-        map.createPane('pane_prostorzapoitek_6');
-        map.getPane('pane_prostorzapoitek_6').style.zIndex = 406;
-        map.getPane('pane_prostorzapoitek_6').style['mix-blend-mode'] = 'normal';
-        var layer_prostorzapoitek_6 = new L.geoJson(json_prostorzapoitek_6, {
-            attribution: '',
-            interactive: false,
-            dataVar: 'json_prostorzapoitek_6',
-            layerName: 'layer_prostorzapoitek_6',
-            pane: 'pane_prostorzapoitek_6',
-            onEachFeature: pop_prostorzapoitek_6,
-            pointToLayer: function (feature, latlng) {
-                var context = {
-                    feature: feature,
-                    variables: {}
-                };
-                return L.circleMarker(latlng, style_prostorzapoitek_6_0(feature));
-            },
-        });
-        bounds_group.addLayer(layer_prostorzapoitek_6);
-        map.addLayer(layer_prostorzapoitek_6);
-        function pop_portniparki_7(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_portniparki_7_0() {
-            return {
-                pane: 'pane_portniparki_7',
+                pane: 'pane_portniparki_1',
                 radius: 6.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -386,28 +86,328 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_portniparki_7');
-        map.getPane('pane_portniparki_7').style.zIndex = 407;
-        map.getPane('pane_portniparki_7').style['mix-blend-mode'] = 'normal';
-        var layer_portniparki_7 = new L.geoJson(json_portniparki_7, {
+        map.createPane('pane_portniparki_1');
+        map.getPane('pane_portniparki_1').style.zIndex = 401;
+        map.getPane('pane_portniparki_1').style['mix-blend-mode'] = 'normal';
+        var layer_portniparki_1 = new L.geoJson(json_portniparki_1, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_portniparki_7',
-            layerName: 'layer_portniparki_7',
-            pane: 'pane_portniparki_7',
-            onEachFeature: pop_portniparki_7,
+            dataVar: 'json_portniparki_1',
+            layerName: 'layer_portniparki_1',
+            pane: 'pane_portniparki_1',
+            onEachFeature: pop_portniparki_1,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_portniparki_7_0(feature));
+                return L.circleMarker(latlng, style_portniparki_1_0(feature));
             },
         });
-        bounds_group.addLayer(layer_portniparki_7);
-        map.addLayer(layer_portniparki_7);
+        bounds_group.addLayer(layer_portniparki_1);
+        map.addLayer(layer_portniparki_1);
+        function pop_prostorzapoitek_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_prostorzapoitek_2_0() {
+            return {
+                pane: 'pane_prostorzapoitek_2',
+                radius: 6.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,158,23,1.0)',
+                interactive: false,
+            }
+        }
+        map.createPane('pane_prostorzapoitek_2');
+        map.getPane('pane_prostorzapoitek_2').style.zIndex = 402;
+        map.getPane('pane_prostorzapoitek_2').style['mix-blend-mode'] = 'normal';
+        var layer_prostorzapoitek_2 = new L.geoJson(json_prostorzapoitek_2, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_prostorzapoitek_2',
+            layerName: 'layer_prostorzapoitek_2',
+            pane: 'pane_prostorzapoitek_2',
+            onEachFeature: pop_prostorzapoitek_2,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_prostorzapoitek_2_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_prostorzapoitek_2);
+        map.addLayer(layer_prostorzapoitek_2);
+        function pop_turistinoinformacijskicentri_3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_turistinoinformacijskicentri_3_0() {
+            return {
+                pane: 'pane_turistinoinformacijskicentri_3',
+                radius: 6.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(183,72,75,1.0)',
+                interactive: false,
+            }
+        }
+        map.createPane('pane_turistinoinformacijskicentri_3');
+        map.getPane('pane_turistinoinformacijskicentri_3').style.zIndex = 403;
+        map.getPane('pane_turistinoinformacijskicentri_3').style['mix-blend-mode'] = 'normal';
+        var layer_turistinoinformacijskicentri_3 = new L.geoJson(json_turistinoinformacijskicentri_3, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_turistinoinformacijskicentri_3',
+            layerName: 'layer_turistinoinformacijskicentri_3',
+            pane: 'pane_turistinoinformacijskicentri_3',
+            onEachFeature: pop_turistinoinformacijskicentri_3,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_turistinoinformacijskicentri_3_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_turistinoinformacijskicentri_3);
+        map.addLayer(layer_turistinoinformacijskicentri_3);
+        function pop_navezavakranjanakolpotargonavti1_4(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_navezavakranjanakolpotargonavti1_4_0() {
+            return {
+                pane: 'pane_navezavakranjanakolpotargonavti1_4',
+                opacity: 1,
+                color: 'rgba(15,157,105,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_navezavakranjanakolpotargonavti1_4');
+        map.getPane('pane_navezavakranjanakolpotargonavti1_4').style.zIndex = 404;
+        map.getPane('pane_navezavakranjanakolpotargonavti1_4').style['mix-blend-mode'] = 'normal';
+        var layer_navezavakranjanakolpotargonavti1_4 = new L.geoJson(json_navezavakranjanakolpotargonavti1_4, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_navezavakranjanakolpotargonavti1_4',
+            layerName: 'layer_navezavakranjanakolpotargonavti1_4',
+            pane: 'pane_navezavakranjanakolpotargonavti1_4',
+            onEachFeature: pop_navezavakranjanakolpotargonavti1_4,
+            style: style_navezavakranjanakolpotargonavti1_4_0,
+        });
+        bounds_group.addLayer(layer_navezavakranjanakolpotargonavti1_4);
+        map.addLayer(layer_navezavakranjanakolpotargonavti1_4);
+        function pop_navezavakranjanakolpotargonavti2_5(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_navezavakranjanakolpotargonavti2_5_0() {
+            return {
+                pane: 'pane_navezavakranjanakolpotargonavti2_5',
+                opacity: 1,
+                color: 'rgba(31,120,180,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_navezavakranjanakolpotargonavti2_5');
+        map.getPane('pane_navezavakranjanakolpotargonavti2_5').style.zIndex = 405;
+        map.getPane('pane_navezavakranjanakolpotargonavti2_5').style['mix-blend-mode'] = 'normal';
+        var layer_navezavakranjanakolpotargonavti2_5 = new L.geoJson(json_navezavakranjanakolpotargonavti2_5, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_navezavakranjanakolpotargonavti2_5',
+            layerName: 'layer_navezavakranjanakolpotargonavti2_5',
+            pane: 'pane_navezavakranjanakolpotargonavti2_5',
+            onEachFeature: pop_navezavakranjanakolpotargonavti2_5,
+            style: style_navezavakranjanakolpotargonavti2_5_0,
+        });
+        bounds_group.addLayer(layer_navezavakranjanakolpotargonavti2_5);
+        map.addLayer(layer_navezavakranjanakolpotargonavti2_5);
+        function pop_kolesarskapotargonavti_6(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['name'] !== null ? autolinker.link(feature.properties['name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['cmt'] !== null ? autolinker.link(feature.properties['cmt'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['desc'] !== null ? autolinker.link(feature.properties['desc'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['src'] !== null ? autolinker.link(feature.properties['src'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link1_href'] !== null ? autolinker.link(feature.properties['link1_href'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link1_text'] !== null ? autolinker.link(feature.properties['link1_text'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link1_type'] !== null ? autolinker.link(feature.properties['link1_type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link2_href'] !== null ? autolinker.link(feature.properties['link2_href'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link2_text'] !== null ? autolinker.link(feature.properties['link2_text'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link2_type'] !== null ? autolinker.link(feature.properties['link2_type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['number'] !== null ? autolinker.link(feature.properties['number'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['type'] !== null ? autolinker.link(feature.properties['type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_kolesarskapotargonavti_6_0() {
+            return {
+                pane: 'pane_kolesarskapotargonavti_6',
+                opacity: 1,
+                color: 'rgba(18,240,25,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_kolesarskapotargonavti_6');
+        map.getPane('pane_kolesarskapotargonavti_6').style.zIndex = 406;
+        map.getPane('pane_kolesarskapotargonavti_6').style['mix-blend-mode'] = 'normal';
+        var layer_kolesarskapotargonavti_6 = new L.geoJson(json_kolesarskapotargonavti_6, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_kolesarskapotargonavti_6',
+            layerName: 'layer_kolesarskapotargonavti_6',
+            pane: 'pane_kolesarskapotargonavti_6',
+            onEachFeature: pop_kolesarskapotargonavti_6,
+            style: style_kolesarskapotargonavti_6_0,
+        });
+        bounds_group.addLayer(layer_kolesarskapotargonavti_6);
+        map.addLayer(layer_kolesarskapotargonavti_6);
+        function pop_kolesarskapotkranjljubljana_7(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['name'] !== null ? autolinker.link(feature.properties['name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['cmt'] !== null ? autolinker.link(feature.properties['cmt'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['desc'] !== null ? autolinker.link(feature.properties['desc'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['src'] !== null ? autolinker.link(feature.properties['src'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link1_href'] !== null ? autolinker.link(feature.properties['link1_href'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link1_text'] !== null ? autolinker.link(feature.properties['link1_text'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link1_type'] !== null ? autolinker.link(feature.properties['link1_type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link2_href'] !== null ? autolinker.link(feature.properties['link2_href'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link2_text'] !== null ? autolinker.link(feature.properties['link2_text'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['link2_type'] !== null ? autolinker.link(feature.properties['link2_type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['number'] !== null ? autolinker.link(feature.properties['number'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['type'] !== null ? autolinker.link(feature.properties['type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_kolesarskapotkranjljubljana_7_0() {
+            return {
+                pane: 'pane_kolesarskapotkranjljubljana_7',
+                opacity: 1,
+                color: 'rgba(251,32,21,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_kolesarskapotkranjljubljana_7');
+        map.getPane('pane_kolesarskapotkranjljubljana_7').style.zIndex = 407;
+        map.getPane('pane_kolesarskapotkranjljubljana_7').style['mix-blend-mode'] = 'normal';
+        var layer_kolesarskapotkranjljubljana_7 = new L.geoJson(json_kolesarskapotkranjljubljana_7, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_kolesarskapotkranjljubljana_7',
+            layerName: 'layer_kolesarskapotkranjljubljana_7',
+            pane: 'pane_kolesarskapotkranjljubljana_7',
+            onEachFeature: pop_kolesarskapotkranjljubljana_7,
+            style: style_kolesarskapotkranjljubljana_7_0,
+        });
+        bounds_group.addLayer(layer_kolesarskapotkranjljubljana_7);
+        map.addLayer(layer_kolesarskapotkranjljubljana_7);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/portniparki_7.png" /> športni parki': layer_portniparki_7,'<img src="legend/prostorzapoitek_6.png" /> prostor za počitek': layer_prostorzapoitek_6,'<img src="legend/turistinoinformacijskicentri_5.png" /> turistično informacijski centri': layer_turistinoinformacijskicentri_5,'<img src="legend/kolesarskapotargonavtiljvrhnikalj_4.png" /> kolesarska-pot-argonavti (lj-vrhnika-lj)': layer_kolesarskapotargonavtiljvrhnikalj_4,'<img src="legend/navezavakranjanakolpotargonavti2_3.png" /> navezava kranja na kol pot argonavti 2': layer_navezavakranjanakolpotargonavti2_3,'<img src="legend/navezavakranjanakolpotargonavti1_2.png" /> navezava kranja na kol pot argonavti 1': layer_navezavakranjanakolpotargonavti1_2,'<img src="legend/kolesarskapotkranjljubljana_1.png" /> kolesarska-pot-kranj-ljubljana': layer_kolesarskapotkranjljubljana_1,"OpenStreetMap": layer_OpenStreetMap_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/kolesarskapotkranjljubljana_7.png" /> kolesarska-pot-kranj-ljubljana': layer_kolesarskapotkranjljubljana_7,'<img src="legend/kolesarskapotargonavti_6.png" /> kolesarska-pot-argonavti ': layer_kolesarskapotargonavti_6,'<img src="legend/navezavakranjanakolpotargonavti2_5.png" /> navezava kranja na kol pot argonavti 2': layer_navezavakranjanakolpotargonavti2_5,'<img src="legend/navezavakranjanakolpotargonavti1_4.png" /> navezava kranja na kol pot argonavti 1': layer_navezavakranjanakolpotargonavti1_4,'<img src="legend/turistinoinformacijskicentri_3.png" /> turistično informacijski centri': layer_turistinoinformacijskicentri_3,'<img src="legend/prostorzapoitek_2.png" /> prostor za počitek': layer_prostorzapoitek_2,'<img src="legend/portniparki_1.png" /> športni parki': layer_portniparki_1,"OpenStreetMap": layer_OpenStreetMap_0,}).addTo(map);
         setBounds();
         </script>
     </body>
