@@ -33,8 +33,8 @@
         <script src="data/portniparki_1.js"></script>
         <script src="data/prostorzapoitek_2.js"></script>
         <script src="data/turistinoinformacijskicentri_3.js"></script>
-        <script src="data/navezavakranjanakolpotargonavti1_4.js"></script>
-        <script src="data/navezavakranjanakolpotargonavti2_5.js"></script>
+        <script src="data/navezavakranjanakolpotargonavti2_4.js"></script>
+        <script src="data/navezavakranjanakolpotargonavti1_5.js"></script>
         <script src="data/kolesarskapotargonavti_6.js"></script>
         <script src="data/kolesarskapotkranjljubljana_7.js"></script>
         <script>
@@ -196,7 +196,7 @@
         });
         bounds_group.addLayer(layer_turistinoinformacijskicentri_3);
         map.addLayer(layer_turistinoinformacijskicentri_3);
-        function pop_navezavakranjanakolpotargonavti1_4(feature, layer) {
+        function pop_navezavakranjanakolpotargonavti2_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
@@ -205,45 +205,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_navezavakranjanakolpotargonavti1_4_0() {
+        function style_navezavakranjanakolpotargonavti2_4_0() {
             return {
-                pane: 'pane_navezavakranjanakolpotargonavti1_4',
-                opacity: 1,
-                color: 'rgba(15,157,105,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 3.0,
-                fillOpacity: 0,
-                interactive: false,
-            }
-        }
-        map.createPane('pane_navezavakranjanakolpotargonavti1_4');
-        map.getPane('pane_navezavakranjanakolpotargonavti1_4').style.zIndex = 404;
-        map.getPane('pane_navezavakranjanakolpotargonavti1_4').style['mix-blend-mode'] = 'normal';
-        var layer_navezavakranjanakolpotargonavti1_4 = new L.geoJson(json_navezavakranjanakolpotargonavti1_4, {
-            attribution: '',
-            interactive: false,
-            dataVar: 'json_navezavakranjanakolpotargonavti1_4',
-            layerName: 'layer_navezavakranjanakolpotargonavti1_4',
-            pane: 'pane_navezavakranjanakolpotargonavti1_4',
-            onEachFeature: pop_navezavakranjanakolpotargonavti1_4,
-            style: style_navezavakranjanakolpotargonavti1_4_0,
-        });
-        bounds_group.addLayer(layer_navezavakranjanakolpotargonavti1_4);
-        map.addLayer(layer_navezavakranjanakolpotargonavti1_4);
-        function pop_navezavakranjanakolpotargonavti2_5(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_navezavakranjanakolpotargonavti2_5_0() {
-            return {
-                pane: 'pane_navezavakranjanakolpotargonavti2_5',
+                pane: 'pane_navezavakranjanakolpotargonavti2_4',
                 opacity: 1,
                 color: 'rgba(31,120,180,1.0)',
                 dashArray: '',
@@ -254,20 +218,56 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_navezavakranjanakolpotargonavti2_5');
-        map.getPane('pane_navezavakranjanakolpotargonavti2_5').style.zIndex = 405;
-        map.getPane('pane_navezavakranjanakolpotargonavti2_5').style['mix-blend-mode'] = 'normal';
-        var layer_navezavakranjanakolpotargonavti2_5 = new L.geoJson(json_navezavakranjanakolpotargonavti2_5, {
+        map.createPane('pane_navezavakranjanakolpotargonavti2_4');
+        map.getPane('pane_navezavakranjanakolpotargonavti2_4').style.zIndex = 404;
+        map.getPane('pane_navezavakranjanakolpotargonavti2_4').style['mix-blend-mode'] = 'normal';
+        var layer_navezavakranjanakolpotargonavti2_4 = new L.geoJson(json_navezavakranjanakolpotargonavti2_4, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_navezavakranjanakolpotargonavti2_5',
-            layerName: 'layer_navezavakranjanakolpotargonavti2_5',
-            pane: 'pane_navezavakranjanakolpotargonavti2_5',
-            onEachFeature: pop_navezavakranjanakolpotargonavti2_5,
-            style: style_navezavakranjanakolpotargonavti2_5_0,
+            dataVar: 'json_navezavakranjanakolpotargonavti2_4',
+            layerName: 'layer_navezavakranjanakolpotargonavti2_4',
+            pane: 'pane_navezavakranjanakolpotargonavti2_4',
+            onEachFeature: pop_navezavakranjanakolpotargonavti2_4,
+            style: style_navezavakranjanakolpotargonavti2_4_0,
         });
-        bounds_group.addLayer(layer_navezavakranjanakolpotargonavti2_5);
-        map.addLayer(layer_navezavakranjanakolpotargonavti2_5);
+        bounds_group.addLayer(layer_navezavakranjanakolpotargonavti2_4);
+        map.addLayer(layer_navezavakranjanakolpotargonavti2_4);
+        function pop_navezavakranjanakolpotargonavti1_5(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_navezavakranjanakolpotargonavti1_5_0() {
+            return {
+                pane: 'pane_navezavakranjanakolpotargonavti1_5',
+                opacity: 1,
+                color: 'rgba(15,157,105,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_navezavakranjanakolpotargonavti1_5');
+        map.getPane('pane_navezavakranjanakolpotargonavti1_5').style.zIndex = 405;
+        map.getPane('pane_navezavakranjanakolpotargonavti1_5').style['mix-blend-mode'] = 'normal';
+        var layer_navezavakranjanakolpotargonavti1_5 = new L.geoJson(json_navezavakranjanakolpotargonavti1_5, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_navezavakranjanakolpotargonavti1_5',
+            layerName: 'layer_navezavakranjanakolpotargonavti1_5',
+            pane: 'pane_navezavakranjanakolpotargonavti1_5',
+            onEachFeature: pop_navezavakranjanakolpotargonavti1_5,
+            style: style_navezavakranjanakolpotargonavti1_5_0,
+        });
+        bounds_group.addLayer(layer_navezavakranjanakolpotargonavti1_5);
+        map.addLayer(layer_navezavakranjanakolpotargonavti1_5);
         function pop_kolesarskapotargonavti_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -407,7 +407,7 @@
         bounds_group.addLayer(layer_kolesarskapotkranjljubljana_7);
         map.addLayer(layer_kolesarskapotkranjljubljana_7);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/kolesarskapotkranjljubljana_7.png" /> kolesarska-pot-kranj-ljubljana': layer_kolesarskapotkranjljubljana_7,'<img src="legend/kolesarskapotargonavti_6.png" /> kolesarska-pot-argonavti ': layer_kolesarskapotargonavti_6,'<img src="legend/navezavakranjanakolpotargonavti2_5.png" /> navezava kranja na kol pot argonavti 2': layer_navezavakranjanakolpotargonavti2_5,'<img src="legend/navezavakranjanakolpotargonavti1_4.png" /> navezava kranja na kol pot argonavti 1': layer_navezavakranjanakolpotargonavti1_4,'<img src="legend/turistinoinformacijskicentri_3.png" /> turistično informacijski centri': layer_turistinoinformacijskicentri_3,'<img src="legend/prostorzapoitek_2.png" /> prostor za počitek': layer_prostorzapoitek_2,'<img src="legend/portniparki_1.png" /> športni parki': layer_portniparki_1,"OpenStreetMap": layer_OpenStreetMap_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/kolesarskapotkranjljubljana_7.png" /> kolesarska-pot-kranj-ljubljana': layer_kolesarskapotkranjljubljana_7,'<img src="legend/kolesarskapotargonavti_6.png" /> kolesarska-pot-argonavti ': layer_kolesarskapotargonavti_6,'<img src="legend/navezavakranjanakolpotargonavti1_5.png" /> navezava kranja na kol pot argonavti 1': layer_navezavakranjanakolpotargonavti1_5,'<img src="legend/navezavakranjanakolpotargonavti2_4.png" /> navezava kranja na kol pot argonavti 2': layer_navezavakranjanakolpotargonavti2_4,'<img src="legend/turistinoinformacijskicentri_3.png" /> turistično informacijski centri': layer_turistinoinformacijskicentri_3,'<img src="legend/prostorzapoitek_2.png" /> prostor za počitek': layer_prostorzapoitek_2,'<img src="legend/portniparki_1.png" /> športni parki': layer_portniparki_1,"OpenStreetMap": layer_OpenStreetMap_0,}).addTo(map);
         setBounds();
         </script>
     </body>
